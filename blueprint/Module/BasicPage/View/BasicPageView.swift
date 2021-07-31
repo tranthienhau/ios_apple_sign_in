@@ -16,7 +16,7 @@ class BasicPageView: UIViewController {
     // contructor
     // public func
     // private func
-    private var presenter: BasicPagePresenterProtocol?
+    var presenter: BasicPagePresenterProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()

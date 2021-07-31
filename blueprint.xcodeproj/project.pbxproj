@@ -18,11 +18,7 @@
 		AA01F4A2266E68DB00BCA88C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA01F4A0266E68DB00BCA88C /* LaunchScreen.storyboard */; };
 		AA01F4AD266E68DB00BCA88C /* blueprintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01F4AC266E68DB00BCA88C /* blueprintTests.swift */; };
 		AA01F4B8266E68DB00BCA88C /* blueprintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01F4B7266E68DB00BCA88C /* blueprintUITests.swift */; };
-		AA059B052676A78100CE1C64 /* DemoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA059B042676A78100CE1C64 /* DemoAPI.swift */; };
-		AA059B072676A79700CE1C64 /* DemoAPIRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA059B062676A79700CE1C64 /* DemoAPIRepository.swift */; };
 		AA059B092676A9C400CE1C64 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA059B082676A9C400CE1C64 /* AppConstants.swift */; };
-		AA059B0B2676AE5500CE1C64 /* MoviResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA059B0A2676AE5500CE1C64 /* MoviResponse.swift */; };
-		AA059B0D2676AEF400CE1C64 /* MoviItemResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA059B0C2676AEF300CE1C64 /* MoviItemResponse.swift */; };
 		AA6D52922681F2820030B7B3 /* PKeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D52912681F2820030B7B3 /* PKeyChainService.swift */; };
 		AA6D52942681F2910030B7B3 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D52932681F2910030B7B3 /* KeyChainService.swift */; };
 		AA72F8BC267825F1002A0925 /* DemoAPIRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72F8BB267825F1002A0925 /* DemoAPIRepositoryTest.swift */; };
@@ -41,12 +37,26 @@
 		AAC12A5126720B560043008C /* BasicPageEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC12A5026720B560043008C /* BasicPageEntity.swift */; };
 		AAC12A5826720C3F0043008C /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC12A5726720C3F0043008C /* DependencyContainer.swift */; };
 		AAC12A5B267225750043008C /* BaseNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC12A5A267225750043008C /* BaseNetworkService.swift */; };
-		AAC12A5D26724C0D0043008C /* ExampleNetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAC12A5C26724C0D0043008C /* ExampleNetworkModel.swift */; };
 		AADA7548268DFFDE00C40DBB /* DatabaseServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AADA7547268DFFDE00C40DBB /* DatabaseServiceProtocol.swift */; };
 		AAE5433B2684C2C200B56670 /* PUserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5433A2684C2C200B56670 /* PUserDefaultService.swift */; };
 		AAE5433D2684C2D100B56670 /* UserDefaultService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE5433C2684C2D100B56670 /* UserDefaultService.swift */; };
 		AAE9F6C3268A0B91008839EA /* KeyChainServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE9F6C2268A0B91008839EA /* KeyChainServiceTest.swift */; };
 		AAE9F6C6268A250C008839EA /* UserDefaultServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE9F6C5268A250C008839EA /* UserDefaultServiceTest.swift */; };
+		AAFFE0D126B5391C00CD890A /* BuilderLoginWithApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0D026B5391C00CD890A /* BuilderLoginWithApple.swift */; };
+		AAFFE0D926B53CAA00CD890A /* LoginWithAppleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0D726B53CAA00CD890A /* LoginWithAppleView.swift */; };
+		AAFFE0DA26B53CAA00CD890A /* LoginWithAppleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFFE0D826B53CAA00CD890A /* LoginWithAppleView.xib */; };
+		AAFFE0DC26B53CC300CD890A /* LoginWithApplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0DB26B53CC300CD890A /* LoginWithApplePresenter.swift */; };
+		AAFFE0DE26B53CD800CD890A /* LoginWithAppleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0DD26B53CD800CD890A /* LoginWithAppleInteractor.swift */; };
+		AAFFE0E026B53CE800CD890A /* LoginWithAppleRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0DF26B53CE800CD890A /* LoginWithAppleRouter.swift */; };
+		AAFFE0E226B53CF900CD890A /* LoginWithAppleEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0E126B53CF900CD890A /* LoginWithAppleEntity.swift */; };
+		AAFFE0E526B5936100CD890A /* BuilderHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0E426B5936100CD890A /* BuilderHome.swift */; };
+		AAFFE0EF26B5941D00CD890A /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0ED26B5941D00CD890A /* HomeView.swift */; };
+		AAFFE0F026B5941D00CD890A /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AAFFE0EE26B5941D00CD890A /* HomeView.xib */; };
+		AAFFE0F226B595B000CD890A /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0F126B595B000CD890A /* HomePresenter.swift */; };
+		AAFFE0F426B595BD00CD890A /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0F326B595BD00CD890A /* HomeInteractor.swift */; };
+		AAFFE0F626B595CB00CD890A /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0F526B595CB00CD890A /* HomeRouter.swift */; };
+		AAFFE0F826B595DB00CD890A /* HomeEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0F726B595DB00CD890A /* HomeEntity.swift */; };
+		AAFFE0FA26B59C9900CD890A /* ResponseLoginApple.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAFFE0F926B59C9900CD890A /* ResponseLoginApple.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,11 +96,7 @@
 		AA01F4B3266E68DB00BCA88C /* blueprintUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blueprintUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA01F4B7266E68DB00BCA88C /* blueprintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blueprintUITests.swift; sourceTree = "<group>"; };
 		AA01F4B9266E68DB00BCA88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AA059B042676A78100CE1C64 /* DemoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAPI.swift; sourceTree = "<group>"; };
-		AA059B062676A79700CE1C64 /* DemoAPIRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAPIRepository.swift; sourceTree = "<group>"; };
 		AA059B082676A9C400CE1C64 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
-		AA059B0A2676AE5500CE1C64 /* MoviResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviResponse.swift; sourceTree = "<group>"; };
-		AA059B0C2676AEF300CE1C64 /* MoviItemResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviItemResponse.swift; sourceTree = "<group>"; };
 		AA6D52912681F2820030B7B3 /* PKeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKeyChainService.swift; sourceTree = "<group>"; };
 		AA6D52932681F2910030B7B3 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		AA72F8BB267825F1002A0925 /* DemoAPIRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAPIRepositoryTest.swift; sourceTree = "<group>"; };
@@ -109,12 +115,27 @@
 		AAC12A5026720B560043008C /* BasicPageEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicPageEntity.swift; sourceTree = "<group>"; };
 		AAC12A5726720C3F0043008C /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		AAC12A5A267225750043008C /* BaseNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetworkService.swift; sourceTree = "<group>"; };
-		AAC12A5C26724C0D0043008C /* ExampleNetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleNetworkModel.swift; sourceTree = "<group>"; };
 		AADA7547268DFFDE00C40DBB /* DatabaseServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseServiceProtocol.swift; sourceTree = "<group>"; };
 		AAE5433A2684C2C200B56670 /* PUserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PUserDefaultService.swift; sourceTree = "<group>"; };
 		AAE5433C2684C2D100B56670 /* UserDefaultService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultService.swift; sourceTree = "<group>"; };
 		AAE9F6C2268A0B91008839EA /* KeyChainServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainServiceTest.swift; sourceTree = "<group>"; };
 		AAE9F6C5268A250C008839EA /* UserDefaultServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultServiceTest.swift; sourceTree = "<group>"; };
+		AAFFE0CC26B538C700CD890A /* blueprint.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = blueprint.entitlements; sourceTree = "<group>"; };
+		AAFFE0D026B5391C00CD890A /* BuilderLoginWithApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderLoginWithApple.swift; sourceTree = "<group>"; };
+		AAFFE0D726B53CAA00CD890A /* LoginWithAppleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithAppleView.swift; sourceTree = "<group>"; };
+		AAFFE0D826B53CAA00CD890A /* LoginWithAppleView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginWithAppleView.xib; sourceTree = "<group>"; };
+		AAFFE0DB26B53CC300CD890A /* LoginWithApplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithApplePresenter.swift; sourceTree = "<group>"; };
+		AAFFE0DD26B53CD800CD890A /* LoginWithAppleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithAppleInteractor.swift; sourceTree = "<group>"; };
+		AAFFE0DF26B53CE800CD890A /* LoginWithAppleRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithAppleRouter.swift; sourceTree = "<group>"; };
+		AAFFE0E126B53CF900CD890A /* LoginWithAppleEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithAppleEntity.swift; sourceTree = "<group>"; };
+		AAFFE0E426B5936100CD890A /* BuilderHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderHome.swift; sourceTree = "<group>"; };
+		AAFFE0ED26B5941D00CD890A /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		AAFFE0EE26B5941D00CD890A /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
+		AAFFE0F126B595B000CD890A /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		AAFFE0F326B595BD00CD890A /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		AAFFE0F526B595CB00CD890A /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		AAFFE0F726B595DB00CD890A /* HomeEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEntity.swift; sourceTree = "<group>"; };
+		AAFFE0F926B59C9900CD890A /* ResponseLoginApple.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseLoginApple.swift; sourceTree = "<group>"; };
 		B061CE1470F4800206BE04B9 /* Pods-blueprintTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blueprintTests.debug.xcconfig"; path = "Target Support Files/Pods-blueprintTests/Pods-blueprintTests.debug.xcconfig"; sourceTree = "<group>"; };
 		C4EC948B20EAAC3596CDDE7C /* Pods-blueprint-blueprintUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blueprint-blueprintUITests.debug.xcconfig"; path = "Target Support Files/Pods-blueprint-blueprintUITests/Pods-blueprint-blueprintUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E57D2956DB41E66DF1BA26CB /* Pods_blueprint.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blueprint.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,11 +218,11 @@
 		AA01F494266E68D900BCA88C /* blueprint */ = {
 			isa = PBXGroup;
 			children = (
+				AAFFE0CC26B538C700CD890A /* blueprint.entitlements */,
 				AA01F4C5266E718200BCA88C /* DependencyContainer */,
 				AA01F4C6266E719200BCA88C /* Service */,
 				AA01F4C7266E71A300BCA88C /* Model */,
 				AA01F4CA266E71E900BCA88C /* Helper */,
-				AAC12A5926720C4C0043008C /* CustomView */,
 				AA01F4C9266E71DB00BCA88C /* Extension */,
 				AA01F4C8266E71B600BCA88C /* Module */,
 				AA01F495266E68D900BCA88C /* AppDelegate.swift */,
@@ -255,8 +276,7 @@
 		AA01F4C7266E71A300BCA88C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AAC12A5326720B8E0043008C /* NetworkModel */,
-				AAC12A5226720B870043008C /* RawModel */,
+				AAFFE0F926B59C9900CD890A /* ResponseLoginApple.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -264,7 +284,8 @@
 		AA01F4C8266E71B600BCA88C /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				AA72F8C52678E382002A0925 /* MoviesPage */,
+				AAFFE0E326B5924500CD890A /* Home */,
+				AAFFE0CD26B538D600CD890A /* LoginWithApple */,
 				AAC12A3D267209420043008C /* BasicPage */,
 			);
 			path = Module;
@@ -285,15 +306,6 @@
 				AA059B082676A9C400CE1C64 /* AppConstants.swift */,
 			);
 			path = Helper;
-			sourceTree = "<group>";
-		};
-		AA059B032676A71300CE1C64 /* DemoCallAPI */ = {
-			isa = PBXGroup;
-			children = (
-				AA059B042676A78100CE1C64 /* DemoAPI.swift */,
-				AA059B062676A79700CE1C64 /* DemoAPIRepository.swift */,
-			);
-			path = DemoCallAPI;
 			sourceTree = "<group>";
 		};
 		AA6D52952681F2970030B7B3 /* KeyChainService */ = {
@@ -321,13 +333,6 @@
 				AA72F8BB267825F1002A0925 /* DemoAPIRepositoryTest.swift */,
 			);
 			path = NetworkService;
-			sourceTree = "<group>";
-		};
-		AA72F8C52678E382002A0925 /* MoviesPage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MoviesPage;
 			sourceTree = "<group>";
 		};
 		AAB47393267B4EF4008C5D6D /* UIKit */ = {
@@ -404,27 +409,9 @@
 			path = Entity;
 			sourceTree = "<group>";
 		};
-		AAC12A5226720B870043008C /* RawModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = RawModel;
-			sourceTree = "<group>";
-		};
-		AAC12A5326720B8E0043008C /* NetworkModel */ = {
-			isa = PBXGroup;
-			children = (
-				AAC12A5C26724C0D0043008C /* ExampleNetworkModel.swift */,
-				AA059B0A2676AE5500CE1C64 /* MoviResponse.swift */,
-				AA059B0C2676AEF300CE1C64 /* MoviItemResponse.swift */,
-			);
-			path = NetworkModel;
-			sourceTree = "<group>";
-		};
 		AAC12A5426720BA50043008C /* NetworkService */ = {
 			isa = PBXGroup;
 			children = (
-				AA059B032676A71300CE1C64 /* DemoCallAPI */,
 				AAC12A5A267225750043008C /* BaseNetworkService.swift */,
 			);
 			path = NetworkService;
@@ -445,13 +432,6 @@
 				AA6D52952681F2970030B7B3 /* KeyChainService */,
 			);
 			path = StorageService;
-			sourceTree = "<group>";
-		};
-		AAC12A5926720C4C0043008C /* CustomView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomView;
 			sourceTree = "<group>";
 		};
 		AAE543382684C05900B56670 /* UserDefaultService */ = {
@@ -477,6 +457,114 @@
 				AAE9F6C5268A250C008839EA /* UserDefaultServiceTest.swift */,
 			);
 			path = UserDefaultService;
+			sourceTree = "<group>";
+		};
+		AAFFE0CD26B538D600CD890A /* LoginWithApple */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE0D626B53A0300CD890A /* View */,
+				AAFFE0D526B539F900CD890A /* Presenter */,
+				AAFFE0D426B539ED00CD890A /* Interactor */,
+				AAFFE0D326B539DC00CD890A /* Router */,
+				AAFFE0D226B5392200CD890A /* Entity */,
+				AAFFE0D026B5391C00CD890A /* BuilderLoginWithApple.swift */,
+			);
+			path = LoginWithApple;
+			sourceTree = "<group>";
+		};
+		AAFFE0D226B5392200CD890A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE0E126B53CF900CD890A /* LoginWithAppleEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AAFFE0D326B539DC00CD890A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE0DF26B53CE800CD890A /* LoginWithAppleRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AAFFE0D426B539ED00CD890A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE0DD26B53CD800CD890A /* LoginWithAppleInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		AAFFE0D526B539F900CD890A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE0DB26B53CC300CD890A /* LoginWithApplePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AAFFE0D626B53A0300CD890A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE0D726B53CAA00CD890A /* LoginWithAppleView.swift */,
+				AAFFE0D826B53CAA00CD890A /* LoginWithAppleView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AAFFE0E326B5924500CD890A /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE0EC26B593A400CD890A /* View */,
+				AAFFE0EB26B5939B00CD890A /* Presenter */,
+				AAFFE0EA26B5939000CD890A /* Interactor */,
+				AAFFE0E926B5938700CD890A /* Router */,
+				AAFFE0E626B5936600CD890A /* Entity */,
+				AAFFE0E426B5936100CD890A /* BuilderHome.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AAFFE0E626B5936600CD890A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE0F726B595DB00CD890A /* HomeEntity.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		AAFFE0E926B5938700CD890A /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE0F526B595CB00CD890A /* HomeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		AAFFE0EA26B5939000CD890A /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE0F326B595BD00CD890A /* HomeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		AAFFE0EB26B5939B00CD890A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE0F126B595B000CD890A /* HomePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		AAFFE0EC26B593A400CD890A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AAFFE0ED26B5941D00CD890A /* HomeView.swift */,
+				AAFFE0EE26B5941D00CD890A /* HomeView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -588,10 +676,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAFFE0DA26B53CAA00CD890A /* LoginWithAppleView.xib in Resources */,
 				AAC12A4926720A340043008C /* BasicPageView.xib in Resources */,
 				AA01F4A2266E68DB00BCA88C /* LaunchScreen.storyboard in Resources */,
 				AA01F49F266E68DB00BCA88C /* Assets.xcassets in Resources */,
 				AA01F49D266E68D900BCA88C /* Main.storyboard in Resources */,
+				AAFFE0F026B5941D00CD890A /* HomeView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -742,26 +832,34 @@
 				AAB4738E267B4DA3008C5D6D /* UIButton+Extension.swift in Sources */,
 				AAC12A4F26720A820043008C /* BasicPageRouter.swift in Sources */,
 				AAC12A5B267225750043008C /* BaseNetworkService.swift in Sources */,
+				AAFFE0E526B5936100CD890A /* BuilderHome.swift in Sources */,
 				AA6D52922681F2820030B7B3 /* PKeyChainService.swift in Sources */,
 				AA059B092676A9C400CE1C64 /* AppConstants.swift in Sources */,
-				AA059B052676A78100CE1C64 /* DemoAPI.swift in Sources */,
 				AA72F8C22678DE4B002A0925 /* UIColor+Extension.swift in Sources */,
+				AAFFE0E226B53CF900CD890A /* LoginWithAppleEntity.swift in Sources */,
+				AAFFE0E026B53CE800CD890A /* LoginWithAppleRouter.swift in Sources */,
+				AAFFE0F426B595BD00CD890A /* HomeInteractor.swift in Sources */,
 				AAC12A4526720A070043008C /* BuilderBasicPage.swift in Sources */,
-				AA059B0B2676AE5500CE1C64 /* MoviResponse.swift in Sources */,
-				AA059B0D2676AEF400CE1C64 /* MoviItemResponse.swift in Sources */,
+				AAFFE0D126B5391C00CD890A /* BuilderLoginWithApple.swift in Sources */,
 				AA01F49A266E68D900BCA88C /* ViewController.swift in Sources */,
-				AA059B072676A79700CE1C64 /* DemoAPIRepository.swift in Sources */,
+				AAFFE0F226B595B000CD890A /* HomePresenter.swift in Sources */,
 				AAC12A5126720B560043008C /* BasicPageEntity.swift in Sources */,
+				AAFFE0EF26B5941D00CD890A /* HomeView.swift in Sources */,
 				AA72F8C02678DA37002A0925 /* UIView+Extension.swift in Sources */,
 				AA6D52942681F2910030B7B3 /* KeyChainService.swift in Sources */,
-				AAC12A5D26724C0D0043008C /* ExampleNetworkModel.swift in Sources */,
 				AAC12A5826720C3F0043008C /* DependencyContainer.swift in Sources */,
 				AA72F8C42678E351002A0925 /* DispathQueue+Extension.swift in Sources */,
+				AAFFE0F826B595DB00CD890A /* HomeEntity.swift in Sources */,
+				AAFFE0DC26B53CC300CD890A /* LoginWithApplePresenter.swift in Sources */,
 				AAB47390267B4E77008C5D6D /* UITextField+Extension.swift in Sources */,
+				AAFFE0F626B595CB00CD890A /* HomeRouter.swift in Sources */,
+				AAFFE0DE26B53CD800CD890A /* LoginWithAppleInteractor.swift in Sources */,
 				AA01F496266E68D900BCA88C /* AppDelegate.swift in Sources */,
 				AAC12A4D26720A580043008C /* BasicPageInteractor.swift in Sources */,
 				AADA7548268DFFDE00C40DBB /* DatabaseServiceProtocol.swift in Sources */,
+				AAFFE0D926B53CAA00CD890A /* LoginWithAppleView.swift in Sources */,
 				AA01F498266E68D900BCA88C /* SceneDelegate.swift in Sources */,
+				AAFFE0FA26B59C9900CD890A /* ResponseLoginApple.swift in Sources */,
 				AAE5433D2684C2D100B56670 /* UserDefaultService.swift in Sources */,
 				AAE5433B2684C2C200B56670 /* PUserDefaultService.swift in Sources */,
 			);
@@ -943,15 +1041,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = blueprint/blueprint.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5LPVUWDHDS;
 				INFOPLIST_FILE = blueprint/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.blueprint;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.signapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "demo apple sign";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -963,15 +1065,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_ENTITLEMENTS = blueprint/blueprint.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 5LPVUWDHDS;
 				INFOPLIST_FILE = blueprint/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.blueprint;
+				PRODUCT_BUNDLE_IDENTIFIER = com.demo.signapple;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "demo apple sign";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

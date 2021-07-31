@@ -24,12 +24,12 @@ class DependencyContainer {
         container.register(T.self, factory: factory)
     }
     
-    func registerServices() {
-        register(service: DemoAPIProtocol.self, factory: { _ in
-            DemoAPIRepository()
-        })
-    
-    }
+//    func registerServices() {
+//        register(service: DemoAPIProtocol.self, factory: { _ in
+//            DemoAPIRepository()
+//        })
+//    
+//    }
     
     func getService<T>() -> T {
         return container.resolve(T.self)!

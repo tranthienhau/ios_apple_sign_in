@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginWithAppleView" customModule="blueprint" customModuleProvider="target">
+            <connections>
+                <outlet property="lbError" destination="14M-tf-rCj" id="0yT-kh-Y2L"/>
+                <outlet property="lcHeightViewApple" destination="uiD-zP-tcF" id="jhT-cP-iNd"/>
+                <outlet property="lcWidthViewApple" destination="sg0-2t-aza" id="1At-EJ-0CF"/>
+                <outlet property="vLoginWithApple" destination="y3G-ai-dkE" id="w55-cv-yAh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Demo Apple Sign-In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwQ-ka-72b">
+                    <rect key="frame" x="103" y="144" width="208.5" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y3G-ai-dkE">
+                    <rect key="frame" x="207" y="273" width="0.0" height="0.0"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" id="sg0-2t-aza"/>
+                        <constraint firstAttribute="height" id="uiD-zP-tcF"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="14M-tf-rCj">
+                    <rect key="frame" x="15" y="313" width="384" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dwQ-ka-72b" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="IVM-Hm-lvp"/>
+                <constraint firstItem="14M-tf-rCj" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="RoT-lG-z1t"/>
+                <constraint firstItem="14M-tf-rCj" firstAttribute="top" secondItem="y3G-ai-dkE" secondAttribute="bottom" constant="40" id="Uw1-1C-eG0"/>
+                <constraint firstItem="dwQ-ka-72b" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="bgJ-i0-o6H"/>
+                <constraint firstAttribute="trailing" secondItem="14M-tf-rCj" secondAttribute="trailing" constant="15" id="ikz-S2-cXk"/>
+                <constraint firstItem="y3G-ai-dkE" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="vIL-ik-lye"/>
+                <constraint firstItem="y3G-ai-dkE" firstAttribute="top" secondItem="dwQ-ka-72b" secondAttribute="bottom" constant="100" id="xTd-Op-1OO"/>
+            </constraints>
+            <point key="canvasLocation" x="71" y="66"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
