@@ -20,4 +20,5 @@ protocol KeyChainServicePrototcol {
     func delete(key: String)
     func clearAll()
 }
-// swiftlint:enable identifier_name 
+
+// swiftlint:enable identifier_name

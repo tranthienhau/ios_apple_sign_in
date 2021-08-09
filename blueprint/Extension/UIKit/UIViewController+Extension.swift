@@ -21,7 +21,8 @@ extension UIViewController {
         } else
         if navigationController?
             .presentingViewController?
-            .presentedViewController == navigationController {
+            .presentedViewController == navigationController
+        {
             return true
         } else if tabBarController?.presentingViewController is UITabBarController {
             return true

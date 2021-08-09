@@ -12,6 +12,7 @@ struct BuilderHome {
         let view = HomeView(nibName: "HomeView", bundle: nil)
 
         // MARK: Initialise components.
+
         let interactor = HomeInteractor()
         let router = HomeRouter(viewController: view)
         let presenter = HomePresenter(view: view,
@@ -20,6 +21,7 @@ struct BuilderHome {
                                       responseLogin: responseLogin)
 
         // MARK: link Viper components.
+
         // Setup View
         view.presenter = presenter
         // Setup Interactor

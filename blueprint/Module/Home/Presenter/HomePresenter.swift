@@ -9,10 +9,10 @@ import Foundation
 
 protocol HomePresenterProtocol: AnyObject {
     func onViewDidLoad()
+    func tapButtonLogout()
 }
 
 class HomePresenter {
-
     private var responseLogin: ResponseLoginApple?
     private weak var view: HomeViewProtocol?
     private var interactor: HomeInteractorProtocol
@@ -21,7 +21,8 @@ class HomePresenter {
     init(view: HomeViewProtocol,
          interactor: HomeInteractorProtocol,
          router: HomeRouterProtocol,
-         responseLogin: ResponseLoginApple) {
+         responseLogin: ResponseLoginApple)
+    {
         self.view = view
         self.interactor = interactor
         self.router = router
@@ -29,12 +30,16 @@ class HomePresenter {
     }
 }
 
-extension HomePresenter : HomePresenterProtocol {
+extension HomePresenter: HomePresenterProtocol {
     func onViewDidLoad() {
-        guard let dataLogin = responseLogin else {return}
-        let homeEntity = HomeEntity(id: dataLogin.id ?? "",
+        guard let dataLogin = responseLogin else { return }
+        let homeEntity = HomeUserInforModel(id: dataLogin.id ?? "",
                                     email: dataLogin.email ?? "",
                                     fullName: (dataLogin.firstName ?? "") + " " + (dataLogin.lastName ?? ""))
         view?.updateUI(param: homeEntity)
+    }
+    
+    func tapButtonLogout() {
+        router.backtoLoginView()
     }
 }

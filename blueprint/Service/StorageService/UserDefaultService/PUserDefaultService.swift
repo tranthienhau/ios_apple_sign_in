@@ -14,4 +14,5 @@ protocol UserDefaultServiceProtocol {
     func getString(with key: String) -> String?
     func removeDataWith(key: String)
 }
+
 // swiftlint:enable identifier_name

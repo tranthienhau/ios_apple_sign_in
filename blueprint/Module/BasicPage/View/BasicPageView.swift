@@ -10,7 +10,6 @@ import UIKit
 protocol BasicPageViewProtocol: AnyObject {}
 
 class BasicPageView: UIViewController {
-
     // IBOut
     // Variable
     // contructor
@@ -20,10 +19,7 @@ class BasicPageView: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 }
 
-extension BasicPageView: BasicPageViewProtocol {
-
-}
+extension BasicPageView: BasicPageViewProtocol {}
