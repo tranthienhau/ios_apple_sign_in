@@ -7,7 +7,9 @@
 
 import UIKit
 
-protocol HomeRouterProtocol: AnyObject {}
+protocol HomeRouterProtocol: AnyObject {
+    func backtoLoginView()
+}
 
 class HomeRouter {
     private weak var viewController: UIViewController?
@@ -17,4 +19,8 @@ class HomeRouter {
     }
 }
 
-extension HomeRouter : HomeRouterProtocol {}
+extension HomeRouter: HomeRouterProtocol {
+    func backtoLoginView() {
+        viewController?.navigationController?.popToRootViewController(animated: false)
+    }
+}

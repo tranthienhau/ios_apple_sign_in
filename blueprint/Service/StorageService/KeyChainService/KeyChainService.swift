@@ -21,26 +21,24 @@ final class KeyChainService: KeyChainServicePrototcol {
     func save(data: Any,
               key: String,
               keyChainAccessOptions: KeychainSwiftAccessOptions?,
-              completion: @escaping (Result<Void, Error>) -> Void) {
+              completion: @escaping (Result<Void, Error>) -> Void)
+    {
         if let data = data as? Data {
             save(data: data,
                  key: key,
                  keyChainAccessOptions: keyChainAccessOptions,
-                 completion: completion
-            )
+                 completion: completion)
         } else if let bool = data as? Bool {
             save(bool: bool,
                  key: key,
                  keyChainAccessOptions: keyChainAccessOptions,
-                 completion: completion
-            )
+                 completion: completion)
         } else {
             let string = String(describing: data)
             save(string: string,
                  key: key,
                  keyChainAccessOptions: keyChainAccessOptions,
-                 completion: completion
-            )
+                 completion: completion)
         }
     }
 
@@ -67,7 +65,8 @@ final class KeyChainService: KeyChainServicePrototcol {
     private func save(data: Data,
                       key: String,
                       keyChainAccessOptions: KeychainSwiftAccessOptions?,
-                      completion: @escaping (Result<Void, Error>) -> Void) {
+                      completion: @escaping (Result<Void, Error>) -> Void)
+    {
         keyChain.set(data, forKey: key, withAccess: keyChainAccessOptions ?? .accessibleWhenUnlocked)
         if keyChain.lastResultCode != noErr {
             let error = self.error(key: key)
@@ -80,7 +79,8 @@ final class KeyChainService: KeyChainServicePrototcol {
     private func save(string: String,
                       key: String,
                       keyChainAccessOptions: KeychainSwiftAccessOptions?,
-                      completion: @escaping (Result<Void, Error>) -> Void) {
+                      completion: @escaping (Result<Void, Error>) -> Void)
+    {
         keyChain.set(string, forKey: key, withAccess: keyChainAccessOptions ?? .accessibleWhenUnlocked)
         if keyChain.lastResultCode != noErr {
             let error = self.error(key: key)
@@ -93,7 +93,8 @@ final class KeyChainService: KeyChainServicePrototcol {
     private func save(bool: Bool,
                       key: String,
                       keyChainAccessOptions: KeychainSwiftAccessOptions?,
-                      completion: @escaping (Result<Void, Error>) -> Void) {
+                      completion: @escaping (Result<Void, Error>) -> Void)
+    {
         keyChain.set(bool, forKey: key, withAccess: keyChainAccessOptions ?? .accessibleWhenUnlocked)
         if keyChain.lastResultCode != noErr {
             let error = self.error(key: key)
@@ -104,10 +105,11 @@ final class KeyChainService: KeyChainServicePrototcol {
     }
 
     private func error(key: String) -> NSError {
-        let error = NSError.init(domain: "ios_blueprint",
-                                 code: 400,
-                                 userInfo: [NSLocalizedDescriptionKey : key])
+        let error = NSError(domain: "ios_blueprint",
+                            code: 400,
+                            userInfo: [NSLocalizedDescriptionKey: key])
         return error
     }
 }
+
 // swiftlint:enable identifier_name

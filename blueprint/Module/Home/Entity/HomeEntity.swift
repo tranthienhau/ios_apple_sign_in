@@ -6,8 +6,8 @@
 //
 
 import Foundation
-
-struct HomeEntity {
+// Change Name Model
+struct HomeUserInforModel {
     var id: String?
     var email: String?
     var fullName: String?

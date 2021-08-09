@@ -18,6 +18,7 @@ struct BuilderElectionMap {
         let presenter = BasicPagePresenter(view: view, interactor: interactor, router: router)
 
         // MARK: link Viper components.
+
         // Setup View
         view.presenter = presenter
         // Setup Interactor

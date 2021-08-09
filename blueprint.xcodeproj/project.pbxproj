@@ -19,6 +19,8 @@
 		AA01F4AD266E68DB00BCA88C /* blueprintTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01F4AC266E68DB00BCA88C /* blueprintTests.swift */; };
 		AA01F4B8266E68DB00BCA88C /* blueprintUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA01F4B7266E68DB00BCA88C /* blueprintUITests.swift */; };
 		AA059B092676A9C400CE1C64 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA059B082676A9C400CE1C64 /* AppConstants.swift */; };
+		AA0A345326B9826C00629FBC /* LoginAppleServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A345226B9826C00629FBC /* LoginAppleServiceProtocol.swift */; };
+		AA0A345526B9827900629FBC /* LoginAppleService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0A345426B9827900629FBC /* LoginAppleService.swift */; };
 		AA6D52922681F2820030B7B3 /* PKeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D52912681F2820030B7B3 /* PKeyChainService.swift */; };
 		AA6D52942681F2910030B7B3 /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA6D52932681F2910030B7B3 /* KeyChainService.swift */; };
 		AA72F8BC267825F1002A0925 /* DemoAPIRepositoryTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA72F8BB267825F1002A0925 /* DemoAPIRepositoryTest.swift */; };
@@ -97,6 +99,8 @@
 		AA01F4B7266E68DB00BCA88C /* blueprintUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blueprintUITests.swift; sourceTree = "<group>"; };
 		AA01F4B9266E68DB00BCA88C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AA059B082676A9C400CE1C64 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		AA0A345226B9826C00629FBC /* LoginAppleServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppleServiceProtocol.swift; sourceTree = "<group>"; };
+		AA0A345426B9827900629FBC /* LoginAppleService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAppleService.swift; sourceTree = "<group>"; };
 		AA6D52912681F2820030B7B3 /* PKeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PKeyChainService.swift; sourceTree = "<group>"; };
 		AA6D52932681F2910030B7B3 /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
 		AA72F8BB267825F1002A0925 /* DemoAPIRepositoryTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoAPIRepositoryTest.swift; sourceTree = "<group>"; };
@@ -266,6 +270,7 @@
 		AA01F4C6266E719200BCA88C /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				AA0A345126B9825200629FBC /* LoginAppleService */,
 				AAC12A5626720BDD0043008C /* StorageService */,
 				AAC12A5526720BBD0043008C /* DatabaseService */,
 				AAC12A5426720BA50043008C /* NetworkService */,
@@ -306,6 +311,15 @@
 				AA059B082676A9C400CE1C64 /* AppConstants.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		AA0A345126B9825200629FBC /* LoginAppleService */ = {
+			isa = PBXGroup;
+			children = (
+				AA0A345226B9826C00629FBC /* LoginAppleServiceProtocol.swift */,
+				AA0A345426B9827900629FBC /* LoginAppleService.swift */,
+			);
+			path = LoginAppleService;
 			sourceTree = "<group>";
 		};
 		AA6D52952681F2970030B7B3 /* KeyChainService */ = {
@@ -817,7 +831,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if which swiftlint >/dev/null; then\n  ${PODS_ROOT}/SwiftLint/swiftlint --config \"${PROJECT_DIR}/.swiftlint.yml\" --strict\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+			shellScript = "
+";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -841,6 +856,7 @@
 				AAFFE0F426B595BD00CD890A /* HomeInteractor.swift in Sources */,
 				AAC12A4526720A070043008C /* BuilderBasicPage.swift in Sources */,
 				AAFFE0D126B5391C00CD890A /* BuilderLoginWithApple.swift in Sources */,
+				AA0A345326B9826C00629FBC /* LoginAppleServiceProtocol.swift in Sources */,
 				AA01F49A266E68D900BCA88C /* ViewController.swift in Sources */,
 				AAFFE0F226B595B000CD890A /* HomePresenter.swift in Sources */,
 				AAC12A5126720B560043008C /* BasicPageEntity.swift in Sources */,
@@ -853,6 +869,7 @@
 				AAFFE0DC26B53CC300CD890A /* LoginWithApplePresenter.swift in Sources */,
 				AAB47390267B4E77008C5D6D /* UITextField+Extension.swift in Sources */,
 				AAFFE0F626B595CB00CD890A /* HomeRouter.swift in Sources */,
+				AA0A345526B9827900629FBC /* LoginAppleService.swift in Sources */,
 				AAFFE0DE26B53CD800CD890A /* LoginWithAppleInteractor.swift in Sources */,
 				AA01F496266E68D900BCA88C /* AppDelegate.swift in Sources */,
 				AAC12A4D26720A580043008C /* BasicPageInteractor.swift in Sources */,

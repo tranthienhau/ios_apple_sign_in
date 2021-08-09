@@ -28,4 +28,5 @@ class UserDefaultService: UserDefaultServiceProtocol {
         UserDefaults.standard.removeObject(forKey: key)
     }
 }
+
 // swiftlint:enable identifier_name

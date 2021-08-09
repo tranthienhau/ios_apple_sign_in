@@ -8,25 +8,36 @@
 import UIKit
 
 protocol HomeViewProtocol: AnyObject {
-    func updateUI(param: HomeEntity)
+    func updateUI(param: HomeUserInforModel)
 }
 
 class HomeView: UIViewController {
-
-    @IBOutlet weak var lbInfor: UILabel!
-
+    
+    @IBOutlet weak var lbEmail: UILabel!
+    @IBOutlet weak var lbFullName: UILabel!
+    @IBOutlet weak var lbBirthDate: UILabel!
+    @IBOutlet weak var lbAdress: UILabel!
+    
     var presenter: HomePresenterProtocol!
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.onViewDidLoad()
     }
+    
+    //MARK: - Button Action
+    @IBAction func btnLogout_Action(_ sender: UIButton) {
+        presenter.tapButtonLogout()
+    }
+    
 }
 
-extension HomeView : HomeViewProtocol {
-    func updateUI(param: HomeEntity) {
-        let textId = "IdUser : \(param.id ?? "") \n"
-        let textFullName = "FullName: \(param.fullName ?? "") \n"
-        let textEmail = "Email: \(param.email ?? "")"
-        lbInfor.text = textId + textFullName + textEmail
+extension HomeView: HomeViewProtocol {
+    func updateUI(param: HomeUserInforModel) {
+        
+        lbEmail.text = param.email != "" ? param.email : param.id
+        
+        if let fullname = param.fullName {
+            lbFullName.text = fullname
+        }
     }
 }

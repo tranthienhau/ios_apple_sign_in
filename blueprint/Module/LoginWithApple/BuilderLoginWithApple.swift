@@ -12,11 +12,15 @@ struct BuilderLoginWithApple {
         let view = LoginWithAppleView(nibName: "LoginWithAppleView", bundle: nil)
 
         // MARK: Initialise components.
-        let interactor = LoginWithAppleInteractor()
+
         let router = LoginWithAppleRouter(viewController: view)
+        let loginAppleService = LoginAppleSerVice(contextProvider: router)
+        let interactor = LoginWithAppleInteractor(loginService: loginAppleService)
+        loginAppleService.authorizationController = interactor
         let presenter = LoginWithApplePresenter(view: view, interactor: interactor, router: router)
 
         // MARK: link Viper components.
+
         // Setup View
         view.presenter = presenter
         // Setup Interactor

@@ -9,9 +9,8 @@
 import XCTest
 
 class UserDefaultServiceTest: XCTestCase {
+    var userDefaultService: UserDefaultService!
 
-    var userDefaultService : UserDefaultService!
-    
     override func setUpWithError() throws {
         userDefaultService = UserDefaultService()
     }
@@ -20,24 +19,24 @@ class UserDefaultServiceTest: XCTestCase {
         userDefaultService = nil
     }
 
-   //MARK: Test Save and Get Data String
+    // MARK: Test Save and Get Data String
+
     func test_save_and_get_string() {
-        //Give
+        // Give
         let stringTest = "Chelsea is Champion"
         userDefaultService.save(data: stringTest, key: "Chelsea")
-        
-        //When
+
+        // When
         let stringReturn = userDefaultService.getString(with: "Chelsea")
-        
-        //Then
+
+        // Then
         XCTAssert(stringReturn != nil && stringReturn == stringTest)
     }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

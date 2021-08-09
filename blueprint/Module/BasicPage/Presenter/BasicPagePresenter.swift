@@ -16,19 +16,18 @@ protocol BasicPagePresenterProtocol: AnyObject {
 }
 
 class BasicPagePresenter {
-
     private weak var view: BasicPageViewProtocol?
     private var interactor: BasicPageInteractorProtocol
     private var router: BasicPageRouterProtocol
 
     init(view: BasicPageViewProtocol,
          interactor: BasicPageInteractorProtocol,
-         router: BasicPageRouterProtocol) {
+         router: BasicPageRouterProtocol)
+    {
         self.view = view
         self.interactor = interactor
         self.router = router
     }
-
 }
 
 extension BasicPagePresenter: BasicPagePresenterProtocol {
@@ -44,6 +43,5 @@ extension BasicPagePresenter: BasicPagePresenterProtocol {
 }
 
 private extension BasicPagePresenter {
-    func testPrivate() {
-    }
+    func testPrivate() {}
 }

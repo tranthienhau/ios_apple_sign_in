@@ -15,12 +15,12 @@ extension UITextField {
 
     func setPlaceHolderColor(with color: UIColor,
                              text: String = "",
-                             font: UIFont = UIFont.systemFont(ofSize: 14)
-    ) {
+                             font: UIFont = UIFont.systemFont(ofSize: 14))
+    {
         attributedPlaceholder = NSAttributedString(string: text,
                                                    attributes: [
                                                        NSAttributedString.Key.foregroundColor: color,
-                                                       NSAttributedString.Key.font: font
+                                                       NSAttributedString.Key.font: font,
                                                    ])
     }
 

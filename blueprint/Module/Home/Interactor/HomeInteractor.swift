@@ -11,8 +11,7 @@ protocol HomeInteractorProtocol: AnyObject {}
 
 class HomeInteractor {
     weak var presenter: HomePresenterProtocol?
-    init() {
-    }
+    init() {}
 }
 
-extension HomeInteractor : HomeInteractorProtocol {}
+extension HomeInteractor: HomeInteractorProtocol {}

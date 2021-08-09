@@ -9,21 +9,19 @@ import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var window: UIWindow?
-    var navigationController: UINavigationController = UINavigationController()
+    var navigationController = UINavigationController()
     // swiftlint:disable all
     func scene(_ scene: UIScene, willConnectTo _: UISceneSession, options _: UIScene.ConnectionOptions) {
-       
         guard let windowScene = (scene as? UIWindowScene) else { return }
-        self.window = UIWindow(windowScene: windowScene)
-        
+        window = UIWindow(windowScene: windowScene)
+
         let loginScreen = BuilderLoginWithApple.buildModule()
         navigationController = UINavigationController(rootViewController: loginScreen)
         navigationController.isNavigationBarHidden = true
-        
-        self.window?.rootViewController = navigationController
-        self.window?.makeKeyAndVisible()
-        self.window?.overrideUserInterfaceStyle = .light
-        
+
+        window?.rootViewController = navigationController
+        window?.makeKeyAndVisible()
+        window?.overrideUserInterfaceStyle = .light
     }
 
     func sceneDidDisconnect(_: UIScene) {

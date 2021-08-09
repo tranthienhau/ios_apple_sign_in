@@ -8,33 +8,33 @@ import Foundation
 import Swinject
 
 // swiftlint:disable all
-//class ApplicationAssembly: Assembly {
+// class ApplicationAssembly: Assembly {
 //    func assemble(container: Container) {
 //        container.register(DemoAPIProtocol.self, factory: { _ in
 //            DemoAPIRepository()
 //        }).inObjectScope(.container)
 //    }
-//}
+// }
 
 class DependencyContainer {
     public static let sharedInstance = DependencyContainer()
     private let container = Container()
-    
-    private func register<T>(service: T.Type, factory: @escaping (Resolver) -> T) {
+
+    private func register<T>(service _: T.Type, factory: @escaping (Resolver) -> T) {
         container.register(T.self, factory: factory)
     }
-    
+
 //    func registerServices() {
 //        register(service: DemoAPIProtocol.self, factory: { _ in
 //            DemoAPIRepository()
 //        })
-//    
+//
 //    }
-    
+
     func getService<T>() -> T {
         return container.resolve(T.self)!
     }
-    
+
 //    let resolver: Resolver = {
 //        Assembler([ApplicationAssembly()]).resolver
 //    }()

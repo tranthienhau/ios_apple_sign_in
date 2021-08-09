@@ -7,5 +7,4 @@
 
 import Foundation
 
-protocol DatabaseServiceProtocol {
-}
+protocol DatabaseServiceProtocol {}

@@ -9,7 +9,7 @@ import Foundation
 
 protocol LoginWithApplePresenterProtocol: AnyObject {
     func tapButtonLoginWithApple()
-    func completeLoginApple(response: ResponseLoginApple?, error: Error?)
+    func completeLoginApple(response: Result<ResponseLoginApple, Error>)
 }
 
 class LoginWithApplePresenter {
@@ -19,7 +19,8 @@ class LoginWithApplePresenter {
 
     init(view: LoginWithAppleViewProtocol,
          interactor: LoginWithAppleInteractorProtocol,
-         router: LoginWithAppleRouterProtocol) {
+         router: LoginWithAppleRouterProtocol)
+    {
         self.view = view
         self.interactor = interactor
         self.router = router
@@ -31,13 +32,12 @@ extension LoginWithApplePresenter: LoginWithApplePresenterProtocol {
         interactor.loginWithApple()
     }
 
-    func completeLoginApple(response: ResponseLoginApple?, error: Error?) {
-        if let errorReturn = error {
-            self.view?.showError(message: errorReturn.localizedDescription)
-        } else {
-            if let data = response {
-                router.gotoHomeView(param: data)
-            }
+    func completeLoginApple(response: Result<ResponseLoginApple, Error>) {
+        switch response {
+        case .success(let data):
+            router.gotoHomeView(param: data)
+        case .failure(let error):
+            view?.showError(message: error.localizedDescription)
         }
     }
 }

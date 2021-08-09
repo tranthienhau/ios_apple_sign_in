@@ -25,3 +25,9 @@ extension LoginWithAppleRouter: LoginWithAppleRouterProtocol {
         viewController.navigationController?.pushViewController(homeView, animated: true)
     }
 }
+
+extension LoginWithAppleRouter : AppleServicePresentationContextProviding {
+    func getWindow() -> UIWindow {
+        return viewController.view.window!
+    }
+}
